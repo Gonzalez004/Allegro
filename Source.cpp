@@ -8,7 +8,7 @@ int main() {
 	al_set_window_position(GameWindow, 200, 200); //Positions Widnow on Screen
 	al_set_window_title(GameWindow, "Ferny's Game"); //Window Title
 	while (true) {
-		int colors = rand() % 3 + 1;
+		int colors = rand() % 7 + 1;
 		switch (colors) {
 		case 1:
 			al_clear_to_color(al_map_rgb(250, 0, 0)); //Set it's Color
@@ -22,6 +22,26 @@ int main() {
 			break;
 		case 3:
 			al_clear_to_color(al_map_rgb(0, 0, 250)); //Set it's Color
+			al_flip_display(); //Write whatever is in memory to the screen
+			system("pause");
+			break;
+		case 4:
+			al_clear_to_color(al_map_rgb(250, 0, 250)); //Set it's Color
+			al_flip_display(); //Write whatever is in memory to the screen
+			system("pause");
+			break;
+		case 5:
+			al_clear_to_color(al_map_rgb(0, 250, 250)); //Set it's Color
+			al_flip_display(); //Write whatever is in memory to the screen
+			system("pause");
+			break;
+		case 6:
+			al_clear_to_color(al_map_rgb(250, 250, 0)); //Set it's Color
+			al_flip_display(); //Write whatever is in memory to the screen
+			system("pause");
+			break;
+		case 7:
+			al_clear_to_color(al_map_rgb(250, 250, 250)); //Set it's Color
 			al_flip_display(); //Write whatever is in memory to the screen
 			system("pause");
 			break;
